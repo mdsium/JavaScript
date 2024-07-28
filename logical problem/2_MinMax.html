@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let number=[4,6,56,86,6,93,45,24,25];
+
+        document.write("Min Number: "+min(number)+"<br>");
+        document.write("Max number: "+max(number)+"<br>");
+
+        function min(number){
+            mi=number[0];
+            for(let n of number){
+                if(n<mi){
+                    mi=n;
+                }
+            }
+            return mi;
+        }
+        function max(number){
+            mi=number[0];
+            for(let n of number){
+                if(n>mi){
+                    mi=n;
+                }
+            }
+            return mi;
+        }
+        
+    </script>
+</body>
+</html>
