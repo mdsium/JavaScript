@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("Enter a number:"));
+        var num2 = parseInt(prompt("Enter a second number:"));
+        var num3 = parseInt(prompt("Enter a third number:"));
+        
+       // Assigning values to variables
+var x= num1;
+var y=num2;
+var z=num3;
+if (x>y && x>z)
+{
+        if (y>z)
+        {
+            console.log(x + ", " + y + ", " +z);
+        }
+        else
+        {
+            console.log(x + ", " + z + ", " +y);
+        }
+}
+else if (y>x && y >z)
+{
+        if (x>z)
+        {
+             console.log(y + ", " + x + ", " +z);
+        }
+        else
+        {
+             console.log(y + ", " + z + ", " +x);
+        }
+}
+else if (z>x && z>y)
+{
+        if (x>y)
+        {
+            console.log(z + ", " + x + ", " +y);
+        }
+        else
+        {
+            console.log(z + ", " + y + ", " +x);
+        }
+}       
+ 
+
+
+       
+
+
+    </script>
+</body>
+</html>

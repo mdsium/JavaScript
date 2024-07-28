@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f">
+       <div>
+          Name<br>
+          <input type="text" name="name" id="name" />
+       </div>
+       <div>
+        Mobile<br>
+        <input type="text" name="mobile" />
+     </div>
+     <div>
+        City<br>
+        <select name="city">
+            <option>Dhaka</option>
+            <option>Chottrogram</option>
+            <option>Khulna</option>
+        </select>
+     </div>
+     <div>
+        Male<input type="radio" name="gender" value="Male" checked />
+        Female<input type="radio" name="gender" value="Female" />
+     </div>
+     <div>
+        Subjects<br>
+        <input type="checkbox" name="subjects" value="English" />English<br>
+        <input type="checkbox" name="subjects" value="Math" />Math<br>
+        <input type="checkbox" name="subjects" value="Bengali" />Bengali<br> 
+    </div>
+    <div>
+        Address<br>
+        <textarea name="address"></textarea>
+    </div>
+     
+     <div>       
+        <input type="button" onclick="show()" name="btn" value="Submit" />
+     </div>
+
+    </form>
+    <script>
+            function show(){     
+                
+                //input
+                let name=document.f.name.value; // document.getElementById("name").value
+                let mobile=document.f.mobile.value;
+                let city=document.f.city.value;
+                let address=document.f.address.value;
+                
+                let sex="";
+                for(let gender of document.f.gender){
+                   if(gender.checked){
+                      sex=gender.value;
+                   }
+                }
+
+                let subjects="";
+
+                for(let subject of document.f.subjects){
+                    if(subject.checked){
+                        subjects+=subject.value+",";
+                    }
+                }
+
+                //output
+                let w= open("","","width=300,height=400,left=400,top=100");
+                w.document.write(`Name: ${name}<br>`);
+                w.document.write(`Mobile: ${mobile}<br>`);
+                w.document.write(`City: ${city}<br>`);               
+                w.document.write(`Gender: ${sex}<br>`);
+                w.document.write(`Subjects: ${subjects}<br>`);
+                w.document.write(`Address: ${address}<br>`);
+                w.document.write(`<input type='button' value='Print' onclick='self.print()' />`);
+                w.document.write(`<input type='button' value='Close' onclick='self.close()' />`);
+            }
+    </script>
+</body>
+</html>
