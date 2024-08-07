@@ -10,4 +10,13 @@
         100% {transform: scale(1);}
         
     }
+    .animation-wobble{
+        position: relative;
+        animation: animation-wobble 3s linear infinite alternate;
+    }
+    @keyframes animation-wobble {
+        0% {transform: translateY(10px);}
+        50% {transform: translateY(-10px);}
+        100% {transform: translateY(10px);}
+    }
 </style>
