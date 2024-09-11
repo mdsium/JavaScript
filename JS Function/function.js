@@ -11,3 +11,4 @@ let z = x(4, 3);
 //The Function() Constructor
 const myFunction = new Function("a", "b", "return a * b");
 let A = myFunction(4, 3);
+
