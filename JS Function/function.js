@@ -12,3 +12,10 @@ let z = x(4, 3);
 const myFunction = new Function("a", "b", "return a * b");
 let A = myFunction(4, 3);
 
+const myFunction = function (a, b) {return a * b};
+
+// Function Hoisting
+myFunction(5);
+function myFunction(y) {
+  return y * y;
+}
