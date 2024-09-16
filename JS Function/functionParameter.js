@@ -7,3 +7,9 @@ function functionName(parameter1, parameter2, parameter3) {
       y = 2;
     }
   }
+
+
+function myFunction(x, y = 10) {
+  return x + y;
+}
+document.getElementById("demo").innerHTML = myFunction(5);
