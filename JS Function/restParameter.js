@@ -11,3 +11,10 @@ function sum(...args) {
 // The Rest Parameter
 // The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
 // 326
+
+let x1 = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x1;
+
+function myFunction(a, b) {
+  return a * b;
+}
