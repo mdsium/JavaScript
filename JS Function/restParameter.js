@@ -19,7 +19,7 @@ function myFunction(a, b) {
   return a * b;
 }
 
-x = sumAll(1, 123, 500, 115, 44, 88);
+A = sumAll(1, 123, 500, 115, 44, 88);
 
 function sumAll() {
   let sum = 0;
