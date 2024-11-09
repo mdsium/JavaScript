@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Roknuzzaman 223015035</title>
+</head>
+<body>
+    <h2>Qustion 1</h2>
+    <div id="output"></div>
+    <script>
+        function check_even_odd(number){
+            if(number%2 == 0){
+                return number + 'Even number';
+            }else{
+                return number + 'Odd number';
+            }
+        }
+        function display(){
+            for(let i=1; i<=10; i++){
+                setTimeout(() => {
+                    const result = check_even_odd(i);
+                    document.getElementById("output").innerHTML += result + '<br>';
+                    
+                }, i*1000);
+            }
+        }
+        display();
+    </script>
+    
+</body>
+</html>
